@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>QAuction</title>
+
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyALphdHm28WXgHNEpphteKIha7V3xc0F9U",
+    authDomain: "auction-8597b.firebaseapp.com",
+    databaseURL: "https://auction-8597b.firebaseio.com",
+    projectId: "auction-8597b",
+    storageBucket: "auction-8597b.appspot.com",
+    messagingSenderId: "1037285091147",
+    appId: "1:1037285091147:web:9f85abc15f01153a3a2ace"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script defer src="/__/firebase/7.6.1/firebase-app.js"></script>
+<!-- include only the Firebase features as you need -->
+<script defer src="/__/firebase/7.6.1/firebase-auth.js"></script>
+<script defer src="/__/firebase/7.6.1/firebase-database.js"></script>
+<script defer src="/__/firebase/7.6.1/firebase-messaging.js"></script>
+<script defer src="/__/firebase/7.6.1/firebase-storage.js"></script>
+<!-- initialize the SDK after all desired features are loaded -->
+<script defer src="/__/firebase/init.js"></script>
+
+
+
+<body>
+<div id="pageHome" class="page">
+    <div id="headerHome" class="header">
+
+        <div id="logo">
+
+        </div>
+
+        <div id="home">
+            <a href="index.html">HOME</a>
+        </div>
+
+        <div id="profile">
+            <a href="profile.html">PROFILE</a>
+        </div>
+
+        <div id="login">
+            <a href="login.html">LOGIN</a>
+        </div>
+
+        <div id="registration">
+            <a href="registration.html">REGISTRATION</a>
+        </div>
+
+    </div>
+
+    <div id="contentHome" class="content">
+        <div id="searchHome">
+            <input type="text" size="25px">
+            <input type="button" value="SEARCH LOTS">
+            <form>
+
+                <p><input name="typesearch" type="radio"  value="tags">Names</p>
+                <p><input name="typesearch" type="radio" value="names" checked>Tags</p>
+
+
+            </form>
+
+        </div>
+
+        <div id="lotsHome">
+
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+
+</html>
